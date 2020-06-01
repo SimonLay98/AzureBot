@@ -1,0 +1,350 @@
+{
+  "luis_schema_version": "4.0.0",
+  "versionId": "0.1",
+  "name": "AzureBotLuis",
+  "desc": "",
+  "culture": "de-de",
+  "tokenizerVersion": "1.0.2",
+  "intents": [
+    {
+      "name": "Configure"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "ShutDownSingleVm"
+    },
+    {
+      "name": "ShutDownVmLandscape"
+    },
+    {
+      "name": "StartSingleVm"
+    },
+    {
+      "name": "StartVmLandscape"
+    }
+  ],
+  "entities": [
+    {
+      "name": "VmLandscapeName",
+      "roles": []
+    },
+    {
+      "name": "VmName",
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "beende vm landschaft",
+      "intent": "ShutDownVmLandscape",
+      "entities": []
+    },
+    {
+      "text": "beende vms",
+      "intent": "ShutDownVmLandscape",
+      "entities": []
+    },
+    {
+      "text": "fahre eine vm herunter",
+      "intent": "ShutDownSingleVm",
+      "entities": []
+    },
+    {
+      "text": "fahre siemens vm hoch",
+      "intent": "StartSingleVm",
+      "entities": [
+        {
+          "entity": "VmName",
+          "startPos": 6,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "fahre siemens vm landschaft hoch",
+      "intent": "StartVmLandscape",
+      "entities": [
+        {
+          "entity": "VmLandscapeName",
+          "startPos": 6,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "fahre siemens vm runter",
+      "intent": "ShutDownSingleVm",
+      "entities": [
+        {
+          "entity": "VmName",
+          "startPos": 6,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "fahre siemens vms hoch",
+      "intent": "StartVmLandscape",
+      "entities": [
+        {
+          "entity": "VmLandscapeName",
+          "startPos": 6,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "fahre siemensvm hoch",
+      "intent": "StartSingleVm",
+      "entities": [
+        {
+          "entity": "VmName",
+          "startPos": 6,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "fahre siemensvm runter",
+      "intent": "ShutDownSingleVm",
+      "entities": [
+        {
+          "entity": "VmName",
+          "startPos": 6,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "fahre vm hoch",
+      "intent": "StartSingleVm",
+      "entities": []
+    },
+    {
+      "text": "fahre vm landschaft herunter",
+      "intent": "ShutDownVmLandscape",
+      "entities": []
+    },
+    {
+      "text": "fahre vm landschaft hoch",
+      "intent": "StartVmLandscape",
+      "entities": []
+    },
+    {
+      "text": "fahre vm runter",
+      "intent": "ShutDownSingleVm",
+      "entities": []
+    },
+    {
+      "text": "fahre vms herunter",
+      "intent": "ShutDownVmLandscape",
+      "entities": []
+    },
+    {
+      "text": "fahre vms hoch",
+      "intent": "StartVmLandscape",
+      "entities": []
+    },
+    {
+      "text": "ich möchte die landschaften konfigurieren",
+      "intent": "Configure",
+      "entities": []
+    },
+    {
+      "text": "konfiguriere",
+      "intent": "Configure",
+      "entities": []
+    },
+    {
+      "text": "konfiguriere siemens landschaft",
+      "intent": "Configure",
+      "entities": [
+        {
+          "entity": "VmLandscapeName",
+          "startPos": 13,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "konfiguriere siemens vm",
+      "intent": "Configure",
+      "entities": [
+        {
+          "entity": "VmName",
+          "startPos": 13,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "starte komplette vm landschaft",
+      "intent": "StartVmLandscape",
+      "entities": []
+    },
+    {
+      "text": "starte mehrere virtuelle maschinen",
+      "intent": "StartVmLandscape",
+      "entities": []
+    },
+    {
+      "text": "starte siemens vm",
+      "intent": "StartSingleVm",
+      "entities": [
+        {
+          "entity": "VmName",
+          "startPos": 7,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "starte siemens vm landschaft",
+      "intent": "StartVmLandscape",
+      "entities": [
+        {
+          "entity": "VmLandscapeName",
+          "startPos": 7,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "starte siemens vms",
+      "intent": "StartVmLandscape",
+      "entities": [
+        {
+          "entity": "VmLandscapeName",
+          "startPos": 7,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "starte siemensvm",
+      "intent": "StartSingleVm",
+      "entities": [
+        {
+          "entity": "VmName",
+          "startPos": 7,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "starte virtuelle maschine",
+      "intent": "StartSingleVm",
+      "entities": []
+    },
+    {
+      "text": "starte vm",
+      "intent": "StartSingleVm",
+      "entities": []
+    },
+    {
+      "text": "starte vm landschaft",
+      "intent": "StartVmLandscape",
+      "entities": []
+    },
+    {
+      "text": "starte vms",
+      "intent": "StartVmLandscape",
+      "entities": []
+    },
+    {
+      "text": "stop siemens vm",
+      "intent": "ShutDownSingleVm",
+      "entities": [
+        {
+          "entity": "VmName",
+          "startPos": 5,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "stop siemensvm",
+      "intent": "ShutDownSingleVm",
+      "entities": [
+        {
+          "entity": "VmName",
+          "startPos": 5,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "stop vm",
+      "intent": "ShutDownSingleVm",
+      "entities": []
+    },
+    {
+      "text": "stop vm landschaft",
+      "intent": "ShutDownVmLandscape",
+      "entities": []
+    },
+    {
+      "text": "stoppe eine vm",
+      "intent": "ShutDownSingleVm",
+      "entities": []
+    },
+    {
+      "text": "stoppe siemens vm",
+      "intent": "ShutDownSingleVm",
+      "entities": [
+        {
+          "entity": "VmName",
+          "startPos": 7,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "stoppe siemensvm",
+      "intent": "ShutDownSingleVm",
+      "entities": [
+        {
+          "entity": "VmName",
+          "startPos": 7,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "stoppe vm",
+      "intent": "ShutDownSingleVm",
+      "entities": []
+    },
+    {
+      "text": "stoppe vm landschaft",
+      "intent": "ShutDownVmLandscape",
+      "entities": []
+    },
+    {
+      "text": "stoppe vms",
+      "intent": "ShutDownVmLandscape",
+      "entities": []
+    },
+    {
+      "text": "welche vms kann ich starten",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "welche vms sind an",
+      "intent": "None",
+      "entities": []
+    }
+  ],
+  "settings": []
+}
